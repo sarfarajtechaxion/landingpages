@@ -1,0 +1,25 @@
+.banner-details .banner-slider .slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+.banner-details .banner-slider .slick-next {
+  right: 20px;
+}
+
+.slider-slide {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.slick-slide img {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .slider-slide {
+    margin-bottom: 10px;
+  }
+  .slick-slide img {
+    width: 100%;
+  }
+}

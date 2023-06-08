@@ -1,0 +1,148 @@
+html, body {margin: 0;height: 100%;}
+* {padding: 0;margin: 0;box-sizing: border-box;font-family: "Poppins", sans-serif;}
+ol, ul {list-style: none;
+}a {color: #fff;text-decoration: none;}
+a:hover {}
+section {padding: 20px 0;}
+.container {max-width: 1640px;width: 100%;margin: 0 auto;padding: 0 20px;}
+@media only screen and (min-width:768px) {
+  section {padding: 40px 0;}
+}
+.section-bg { background-color: #f5f5f5; }
+.box-shadow { box-shadow: 0px 0px 6px 3px #ccc;}
+.bg-color:hover { box-shadow: 0px 0px 10px 0px #ccc; }
+/********* Loader *********/
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/logo.png') 50% 50% no-repeat ;
+}
+
+h2 { font-size: 22px; }
+h3 { font-size: 16px; }
+@media only screen and (min-width:768px) {
+  h2 { font-size: 30px; }
+  h3 { font-size: 18px; }
+}
+/********* Fixed Header **********/
+.back-to-top {
+  background: linear-gradient(to left, #f46b45, #eea849);
+  text-decoration: none;
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  z-index: 999;
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.4);
+}
+svg.icon__arrow-up {
+  fill: white;
+  width: 32px;
+  height: 32px;
+}
+
+/********* Banner *********/
+
+.banner-wrapper {display: flex;align-items: center;flex-direction: column;margin-bottom: 20px;}
+.brand-slider {display: none;}
+
+.banner-details {max-width: 100%; margin-bottom: 30px;}
+.banner-slider .slide {position: relative;}
+.banner-slider .slide h3 { position: absolute; bottom: 20px; color: #fff; max-width: 800px; text-align: center; left: 0; right: 0; margin: 0 auto; }
+.banner-slider .slick-slide img { height: 350px; width: 100%; }
+
+.form {max-width: 300px; padding: 20px;  /*box-shadow: 5px 0 15px -4px #eea849, -5px 0 8px -4px #eea849;*/ box-shadow:0px 0px 6px 3px #eea849;}
+.form:hover { box-shadow:0px 0px 10px 0px #eea849; }
+.form h2 {text-transform: capitalize;text-align: center;margin-bottom: 15px;}
+.form-group {position: relative;}
+input.input {height: 30px;line-height: 30px;width: 100%;margin-bottom: 16px;padding: 5px 10px;}
+.form-check {margin-bottom: 20px;position: relative;}
+.form-check input {position: absolute;top: 4px;}
+.form-check .form-check-label {font-size: 12px;padding-left: 20px;display: block;}
+.btn-primary {  transition: 0.5s; border: 1px solid transparent; background: linear-gradient(to left, #f46b45, #eea849);color: #fff;width: 100%;padding: 10px 0;max-width: 150px;margin: 0 auto;display: block;text-transform: capitalize;cursor: pointer;}
+.btn-primary:hover { background: transparent; border: 1px solid #f46b45; color: #eea849; transition: 0.5s;}
+label.error {color: red;font-size: 12px;position: absolute;bottom: 0;left: 0;}
+input:focus {outline: 0;}
+input.error {border: 1px solid red;}
+.form-check label.error {bottom: -15px;left: 20px;}
+
+@media only screen and (min-width:768px) {  
+  .banner-wrapper { flex-direction: row; margin-bottom: 30;}
+  .banner-details {max-width: calc(100% - 320px);/*max-width: 500px;*/ margin-bottom: 0; /*padding-right: 40px;*/}
+  .form {margin-left: auto;}
+  .form h2 {margin-bottom: 20px;}
+}
+@media only screen and (min-width:1024px) {
+  .banner-wrapper {margin-bottom: 0;}
+  .brand-slider { max-width: 200px; width: 100%; display: block; padding: 0; }
+  .tab-product-slider { display: none;}
+  .banner-details {/*max-width: 700px;*/ max-width: calc(100% - 620px);}
+  .banner-slider .slick-slide img { height: 380px; }
+  .form {max-width: 400px;}
+  input.input {height: 40px; line-height: 40px; margin-bottom: 20px; }
+}
+@media only screen and (min-width:1200px) {
+  /* .banner-details {max-width: 800px;padding-right: 0;} */
+}
+/********* Mutual Fund *********/
+
+.mutual-fund h2 { text-align: center; text-transform: capitalize; margin-bottom: 30px;}
+ul.mf-wrapper { display: flex; align-items: stretch; margin: 0 -10px; flex-wrap: wrap; }
+ul.mf-wrapper li { width: 100%; padding: 0 10px; margin-bottom: 20px; }
+ul.mf-wrapper li.colmuns-2 { width: 100%; }
+ul.mf-wrapper li .bg-color {background-color: #fff; padding: 15px;user-select: none; height: 100%;}
+ul.mf-wrapper li.list-item h3 { text-align: center; text-transform: capitalize; margin-bottom: 10px; }
+ul.mf-wrapper li a { color: #00baf0;    cursor: pointer;}
+.morecontent span { display: none; }
+.morelink { display: inline-block; }
+.morecontent span{transition: 0.5s;-webkit-transition: 0.5s;-moz-transition: 0.5s;}
+@media only screen and (min-width:480px) {  
+  ul.mf-wrapper li { width: 50%;}
+  ul.mf-wrapper li.colmuns-2 { width: 50%; }
+}
+@media only screen and (min-width:768px) {  
+  ul.mf-wrapper li { width: 33.33%;}
+}
+
+
+
+
+
+
+
+.myslider .item { width: 100%; position: relative; }
+.myslider .item img { width: 200px;}
+
+.myslider .slick-dots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+}
+.myslider .slick-dots li {
+  list-style: none;
+  margin: 15px 0;
+}
+.myslider .slick-dots button {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #fff;
+  text-indent: -9999px;
+  outline: 0;
+}
+.myslider .slick-dots button:hover {
+  background-color: #000;
+}
