@@ -47,7 +47,7 @@ h3 { font-size: 16px; }
   box-shadow: 0 4px 16px 0 rgba(0,0,0,0.4);
 }
 svg.icon__arrow-up {
-  fill: white;
+  fill: #fff;
   width: 32px;
   height: 32px;
 }
@@ -62,7 +62,7 @@ svg.icon__arrow-up {
 .banner-slider .slide h3 { position: absolute; bottom: 20px; color: #fff; max-width: 800px; text-align: center; left: 0; right: 0; margin: 0 auto; }
 .banner-slider .slick-slide img { height: 350px; width: 100%; }
 
-.form {max-width: 300px; padding: 20px;  /*box-shadow: 5px 0 15px -4px #eea849, -5px 0 8px -4px #eea849;*/ box-shadow:0px 0px 6px 3px #eea849;}
+.form {max-width: 300px; padding: 20px; box-shadow:0px 0px 6px 3px #eea849;}
 .form:hover { box-shadow:0px 0px 10px 0px #eea849; }
 .form h2 {text-transform: capitalize;text-align: center;margin-bottom: 15px;}
 .form-group {position: relative;}
@@ -79,7 +79,7 @@ input.error {border: 1px solid red;}
 
 @media only screen and (min-width:768px) {  
   .banner-wrapper { flex-direction: row; margin-bottom: 30;}
-  .banner-details {max-width: calc(100% - 320px);/*max-width: 500px;*/ margin-bottom: 0; /*padding-right: 40px;*/}
+  .banner-details {max-width: calc(100% - 320px); margin-bottom: 0;}
   .form {margin-left: auto;}
   .form h2 {margin-bottom: 20px;}
 }
@@ -87,13 +87,10 @@ input.error {border: 1px solid red;}
   .banner-wrapper {margin-bottom: 0;}
   .brand-slider { max-width: 200px; width: 100%; display: block; padding: 0; }
   .tab-product-slider { display: none;}
-  .banner-details {/*max-width: 700px;*/ max-width: calc(100% - 620px);}
+  .banner-details {max-width: calc(100% - 620px);}
   .banner-slider .slick-slide img { height: 380px; }
   .form {max-width: 400px;}
   input.input {height: 40px; line-height: 40px; margin-bottom: 20px; }
-}
-@media only screen and (min-width:1200px) {
-  /* .banner-details {max-width: 800px;padding-right: 0;} */
 }
 /********* Mutual Fund *********/
 
@@ -114,12 +111,6 @@ ul.mf-wrapper li a { color: #00baf0;    cursor: pointer;}
 @media only screen and (min-width:768px) {  
   ul.mf-wrapper li { width: 33.33%;}
 }
-
-
-
-
-
-
 
 .myslider .item { width: 100%; position: relative; }
 .myslider .item img { width: 200px;}
