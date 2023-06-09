@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/footer.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/custom-slick-slider.css" type="text/css" />
-
+    <!--Scroll Animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
 </head>
 <body>
@@ -32,28 +32,29 @@
           <path d="M18.71,11.71a1,1,0,0,1-1.42,0L13,7.41V19a1,1,0,0,1-2,0V7.41l-4.29,4.3a1,1,0,0,1-1.42-1.42l6-6a1,1,0,0,1,1.42,0l6,6A1,1,0,0,1,18.71,11.71Z"/>
         </svg>
     </a>
-    <header>
-        <div class="header-wrapper">
-            <div class="container">
-                <div class="top-nav">
-                    <a class="logo" href="/index.html">
-                        <img src="./assets/images/logo.png" alt="Logo" draggable="false"/>
-                    </a>
-                    <input id="menu-toggle" type="checkbox" />
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-                    <ul class="menu">
-                        <li> <a href="http://">About Us</a> </li>
-                        <li> <a href="http://">NFO</a> </li>
-                        <li> <a href="tel:+917966669000" title="Call"> <span class="call"> <img src="./assets/images/call-white.svg" alt="call" width="20"> </span> +91 79 6666 9000 </a>
-                        </li>
-                    </ul>
+    
+    <main>
+        <header>
+            <div class="header-wrapper">
+                <div class="container">
+                    <div class="top-nav">
+                        <a class="logo" href="/index.html">
+                            <img src="./assets/images/logo.png" alt="Logo" draggable="false"/>
+                        </a>
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class='menu-button-container' for="menu-toggle">
+                            <div class='menu-button'></div>
+                        </label>
+                        <ul class="menu">
+                            <li> <a href="http://">About Us</a> </li>
+                            <li> <a href="http://">NFO</a> </li>
+                            <li> <a href="tel:+917966669000" title="Call"> <span class="call"> <img src="./assets/images/call-white.svg" alt="call" width="20"> </span> +91 79 6666 9000 </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
+        </header>
         <div class="main-wrapper">
             <section class="banner">
                 <div class="container">
@@ -339,7 +340,7 @@
         });
         // Loader
         $(window).load(function(){
-            $('.loader').fadeOut(1200);
+            $('.loader').hide();
         });        
         // Back To Top Button
         const backToTop = $('#backToTop')
