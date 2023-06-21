@@ -1,3 +1,3 @@
-# landingpages
+# Mutual Fund Landingpages
 
-https://github.com/sarfarajtechaxion/mutualfund
+https://sarfarajtechaxion.github.io/mutualfund/
